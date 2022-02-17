@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleHeader,Nav,Images} from './Styles/Header.style';
+import {StyleHeader,Nav,Images,} from './Styles/Header.style';
 import {Container} from './Styles/Container.style';
 import {Flex} from '../Components/Styles/Flex.style';
 
@@ -33,8 +33,10 @@ const Header=()=>{
                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </div>
                 </Flex>
+                
                 <Images src='https://f5-studio.com/wp-content/uploads/2018/07/ui-in-blog-e1577968131857.jpg' alt='dd'/>
                 <Images src='https://lvivity.com/wp-content/uploads/2019/02/ui-testing.jpg' alt='ds'/>
+               
         </Container>
         
         </StyleHeader>

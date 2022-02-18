@@ -7,7 +7,7 @@ export const Flex=styled.div`
  padding-top:10px;
 
  @media (max-width:${({theme})=>theme.mobile}){
-    margin:10px;
+    margin:15px;
     
 
 `

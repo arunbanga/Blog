@@ -1,15 +1,16 @@
 import React from 'react';
-import {StyleHeader,Nav,Images,} from './Styles/Header.style';
+import {StyleAbout,Nav,Images,} from './Styles/About.style';
 import {Container} from './Styles/Container.style';
 import {Flex} from '../Components/Styles/Flex.style';
 
 
-const Header=()=>{
+const About=()=>{
     return(
         <>
-        <StyleHeader>
+        <StyleAbout>
         <Container>
             <Nav>
+              
                <h3 style={{padding:'10px'}}>Blogs</h3> 
                 <h3 style={{padding:'10px',color:'orange'}}>Work</h3>
                 <h3 style={{padding:'10px'}}>Contact</h3>
@@ -37,10 +38,15 @@ const Header=()=>{
                 <Images src='https://f5-studio.com/wp-content/uploads/2018/07/ui-in-blog-e1577968131857.jpg' alt='dd'/>
                 <Images src='https://lvivity.com/wp-content/uploads/2019/02/ui-testing.jpg' alt='ds'/>
                
+                <Flex>
+         
+         <p>Copyright ©2020 All rights reserved</p>
+        
+         </Flex>
         </Container>
         
-        </StyleHeader>
+        </StyleAbout>
         </>
     )
 }
-export default Header;
+export default About;

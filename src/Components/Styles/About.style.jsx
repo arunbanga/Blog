@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyleHeader= styled.header`
+export const StyleAbout= styled.header`
  justify-content:center;
 
  @media (max-width: ${({theme})=>theme.mobile}){
@@ -18,7 +18,7 @@ justify-content:flex-end;
     justify-content:flex-end;
     padding:0px;
     margin:0px;
-  
+    
 }
 
 `
@@ -28,11 +28,15 @@ margin-left:350px;
 margin-bottom:20px;
 
 
-@media (max-width: ${({theme})=>theme.mobile}){
-    width:100%;
-    margin: 0px;
-    
 
-        
+@media (max-width: ${({theme})=>theme.mobile}){
+    width:95%;
+    padding:0px;
+    margin-left:8px;
+    
+    
+    
+    
+   
       
 `

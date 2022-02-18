@@ -1,22 +1,26 @@
 import {Container} from './Components/Styles/Container.style'
-import Header from './Components/Header'
-import Footer from './Components/Footer'
+import About from './Components/About'
+
 import {ThemeProvider} from 'styled-components'
 const theme={
-  mobile:'768px',
+  mobile:'800px',
+  
 }
+
+
+
 const App =()=>{
 
   return (
     
     <>
     <ThemeProvider theme={theme}>
-    <Header/>
+    <About/>
     <Container>
     
      
     </Container>
-    <Footer/>
+    
     </ThemeProvider>
     </>
   );

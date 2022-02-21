@@ -1,27 +1,22 @@
-import {Container} from './Components/Styles/Container.style'
+
 import About from './Components/About'
-
-import {ThemeProvider} from 'styled-components'
-const theme={
-  mobile:'800px',
-  
-}
-
-
-
+import Blog from './Components/Blog'
+import {Routes,Route} from 'react-router-dom';
+import Work from './Components/Work'
 const App =()=>{
 
   return (
     
     <>
-    <ThemeProvider theme={theme}>
-    <About/>
-    <Container>
+    <Blog/>
+    <Routes>
+      <Route path='/' element={<About/>}/>
+      <Route path='/work' element={<Work/>}/>
+
+    </Routes>
     
-     
-    </Container>
     
-    </ThemeProvider>
+    
     </>
   );
 }

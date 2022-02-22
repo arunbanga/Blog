@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {deviceMax,} from '../../utils/device'
+import {deviceMax} from '../../utils/device'
 export const Images=styled.img`
  width:100%;
  opacity:0.6;
@@ -36,15 +36,15 @@ right:100px;
 
 @media ${deviceMax.mobileM} {
   position:absolute;
-   top:150px;
+   top:100px;
    font-Size:7px;
    right:80px;
 }
 @media ${deviceMax.tablet} {
   position:absolute;
    top:180px;
-   font-Size:10px;
-   right:120px;
+   font-Size:7px;
+   right:200px;
 
    
   }
@@ -60,10 +60,23 @@ right:100px;
   position:absolute;
    top:170px;
    font-Size:7px;
-   right:30px;
+   right:10px;
 
-   
+  
+
   }
+  @media ${deviceMax.laptop}{
+    position:absolute;
+    top:170px;
+    
+   
+
+  }
+  
+  
+  
+ 
+
 
 
 `
@@ -84,7 +97,7 @@ left:100px;
   position:absolute;
    top:70px;
    font-Size:10px;
-   left:120px;
+   left:200px;
 
    
   }

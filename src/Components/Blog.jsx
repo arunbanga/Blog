@@ -8,7 +8,7 @@ const Blog =()=>{
         
         <Container width='100%'> 
          <Nav>
-                      <h3 style={{ padding: '10px' }}><a style={{color:'black',textDecoration:'none'}} href='/'>Blogs</a></h3>
+                      <h3 style={{ padding: '10px' }}><a style={{color:'black',textDecoration:'none'}} href='/about'>Blogs</a></h3>
                        <h3 style={{ padding: '10px', color: 'orange' }}><a style={{color:'black',textDecoration:'none'}} href='/work'>Work</a></h3>
                        <h3 style={{ padding: '10px' }}>Contact</h3>
                        

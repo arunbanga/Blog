@@ -16,7 +16,7 @@ const Work=()=>{
          <StyleNav>
          <h1>Mark Eter </h1>
          <br/>
-         <h2><a style={{textDecoration:'none'}} href='/'>About</a></h2>
+         <h2><a style={{textDecoration:'none'}} href='/about'>About</a></h2>
          <h2> <a style={{textDecoration:'none'}} href='/work'>Work</a></h2>
          <h2> <a style={{textDecoration:'none'}} href='/work'>Reviews</a></h2>
          <h2> <a style={{textDecoration:'none'}} href='/work'>Question</a></h2>

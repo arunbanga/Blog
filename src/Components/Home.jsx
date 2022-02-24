@@ -51,19 +51,19 @@ const Home = () => {
         
         </CenterContainer>
         
-      <Container width='100%' padding='10px' margin='10px 0px '>
-      <Container width='900px' display='flex' flexDirection='row' justifyContent='space-between' background='skyblue'>
+      <Container  >
+      <Container width='100%' display='flex' flexDirection='row' justifyContent='space-between' >
       
       </Container>
-      <Blogs>
+      
+        <Blogs>
 
        <Card/>
-       </Blogs>
-       
+      </Blogs>
        </Container>
-      <Container>
+      
       <p style={{textAlign:'center'}}>Featured Works</p>
-      </Container>
+     
       <Container width='100%' display='flex' flexDirection='row' justifyContent='center' >
       
       <Container width='300px'>
@@ -153,7 +153,7 @@ padding:10px;
 
 @media ${deviceMax.mobileM}{
   width:100%;
-  margin-left:300px;
+  margin-left:330px;
 }   
 @media ${deviceMax.laptop}{
   padding:10px;
@@ -166,18 +166,22 @@ display:flex;
 background:skyblue;
 height:300px;
 padding:0px;
+
 width:100%;
-margin:10px 0px ;
 justifyContent:center;
 
 
 @media ${deviceMax.mobileM}{
   display:flex;
-  flexDirection:column;
+  flex-direction:column;
+  align-items:center;
+  margin: 0px 180px;
   height:100%;
   width:100%;
-  align-items:center;
-  justifyContent:center;
+  font-size:30px;
+  
+  
+;
 }
 `
 const RightContainer=styled.div`

@@ -4,7 +4,7 @@ import { Container } from "./Styles/Container.style";
 import { Images, Image } from "../Components/Styles/Home.style";
 import { deviceMax } from "../utils/device";
 import Card from "../Data/Card";
-
+import Workdata from '../Data/Workdata'
 const Home = () => {
   return (
     <>
@@ -55,107 +55,33 @@ const Home = () => {
             </RightContainer>
           </CenterContainer>
 
-          <Container background='skyblue'>
+          <Container background="skyblue">
             <Container
               width="100%"
               display="flex"
               flexDirection="row"
               justifyContent="space-between"
-              background='skyblue'  
+              background="skyblue"
             >
-            <h2>Recent Posts</h2>
-            <h3>View All</h3>
+              <h2>Recent Posts</h2>
+              <h3>View All</h3>
             </Container>
             <Blogs>
               <Card />
-              <Card/>
+              <Card />
             </Blogs>
           </Container>
-
-          {/* <p style={{ textAlign: "center" }}>Featured Works</p> 
-
-          <Container
-            width="100%"
-            display="flex"
-            flexDirection="row"
-            justifyContent="center"
-          >
-            <Container width="300px">
-              <Image
-                src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://www.visor.ai/wp-content/uploads/User_experience-1-1-770x510.png"
-                alt="dsf"
-              />
-            </Container>
-            <Container width="500px" style={{ paddingLeft: "20px" }}>
-              <h1>Designing Dashboards</h1>
-              <h2>Dashboard</h2>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit
-                <br />
-                officia consequat duis enim velit mollit. Exercitation veniam
-                consequat sunt
-                <br />
-                nostrud amet.
-              </p>
-              <br />
-              <hr />
-            </Container>
+          <Container>
+            <p style={{ textAlign: "center" }}>Featured Works</p>
+            
+            <Workdata/>
+            <Workdata/>
+             <Workdata/>
+              
+              
+              
+            
           </Container>
-
-          <Container
-            width="100%"
-            display="flex"
-            flexDirection="row"
-            justifyContent="center"
-          >
-            <Container width="300px">
-              <Image
-                src="https://image.shutterstock.com/image-vector/toolkituiux-scene-creator-mobile-application-260nw-1794142201.jpg"
-                alt="dsf"
-              />
-            </Container>
-            <Container width="500px" style={{ paddingLeft: "20px" }}>
-              <h1>Vibrant Portraits of 2020</h1>
-              <h2>Illustration</h2>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet..
-              </p>
-              <br />
-              <hr />
-            </Container>
-          </Container>
-
-          <Container
-            width="100%"
-            display="flex"
-            flexDirection="row"
-            justifyContent="center"
-          >
-            <Container width="300px">
-              <Image
-                src="https://w10.naukri.com/mailers/2021/naukri-learning/oct/27oct/What-is-UI-UX-Design.jpg"
-                alt="dsf"
-              />
-            </Container>
-            <Container width="500px" style={{ paddingLeft: "20px" }}>
-              <h1>36 Days of Malayalam type</h1>
-              <h2>Typography</h2>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit
-                <br />
-                officia consequat duis enim velit mollit. Exercitation veniam
-                consequat sunt
-                <br />
-                nostrud amet.
-              </p>
-              <br />
-              <hr /> 
-            </Container>
-          </Container>*/}
         </MainContainer>
       </Container>
     </>
@@ -201,17 +127,32 @@ const Blogs = styled.div`
   background: skyblue;
   height: 300px;
   padding: 0px;
-    width: 100%;
+  width: 100%;
   justifycontent: center;
 
   @media ${deviceMax.mobileL} {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-Content:center;
+    justify-content: center;
     height: 100%;
     width: 100%;
     font-size: 20px;
   }
 `;
+const Work = styled.div`
+  width: 900px;
+  height:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  @media ${deviceMax.mobileL} {
+    width: 600px;
+    height:100%;
+    sdisplay: flex;
+    flex-direction: column;
+    text-align:center;
+  }
+`;
+
 export default Home;

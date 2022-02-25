@@ -1,17 +1,11 @@
 import React from "react";
-import styled from 'styled-components'
+import styled from "styled-components";
 import { deviceMax } from "../utils/device";
 const Card = () => {
   return (
     <>
-    
       <MainContainer>
-        
-        <h2>
-          Making a design system from
-          <br />
-          scratch
-        </h2>
+        <h2>Making a design system from scratch</h2>
         <p>
           12 Feb 2020 12 Feb 2022 Design, Pattern
           <br />
@@ -24,23 +18,20 @@ const Card = () => {
           consequat sunt nostrud amet.
         </p>
       </MainContainer>
-     
     </>
   );
 };
-const MainContainer= styled.div`
-  width:400px;
-  border:2px solid gray;
-  padding:10px;
-  margin:10px;
-  background:white;
+const MainContainer = styled.div`
+  width: 400px;
+  border: 2px solid gray;
+  padding: 10px;
+  margin: 10px;
+  background: white;
 
-  @media ${deviceMax.mobileL}{
-    width:350px;
-    padding:0px;
-    margin:0px;
-    justify-content:center;
-
+  @media ${deviceMax.mobileL} {
+    width: 350px;
+    padding: 0px;
+    margin: 0px;
   }
-`
+`;
 export default Card;

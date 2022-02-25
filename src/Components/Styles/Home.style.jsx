@@ -8,7 +8,9 @@ clip-path:circle();
 
 `
 export const Image=styled.img`
-width:300px;
+width:320px;
+height:100%;
+
 
 `
 

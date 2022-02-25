@@ -1,29 +1,46 @@
-import React from 'react'
-import {Container} from '../Components/Styles/Container.style'
-const Card=()=>{
-    return(
-        <>
-       
-          
-        <Container width='400px'style={{border:'2px solid gray', padding:'10px',margin:'10px'}}>
-        <h2>Making a design system from<br/>scratch</h2>
-        <p>12 Feb 2020 12 Feb 2022 Design, Pattern<br/>
-        Amet minim mollit non deserunt ullamco est sit<br/>
-      aliqua dolor do amet sint. Velit officia consequat<br/>
-      duis enim velit mollit. Exercitation veniam<br/>
-      consequat sunt nostrud amet.</p>  
-        </Container>
-        <Container width='400px' style={{border:'2px solid gray' , padding:'10px',margin:'10px'}}>
-        <h2>Making a design system from<br/>scratch</h2>
-        <p>12 Feb 2020 12 Feb 2022 Design, Pattern<br/>
-        Amet minim mollit non deserunt ullamco est sit<br/>
-      aliqua dolor do amet sint. Velit officia consequat<br/>
-      duis enim velit mollit. Exercitation veniam<br/>
-      consequat sunt nostrud amet.</p>  
-        </Container>
+import React from "react";
+import styled from 'styled-components'
+import { deviceMax } from "../utils/device";
+const Card = () => {
+  return (
+    <>
+    
+      <MainContainer>
+        
+        <h2>
+          Making a design system from
+          <br />
+          scratch
+        </h2>
+        <p>
+          12 Feb 2020 12 Feb 2022 Design, Pattern
+          <br />
+          Amet minim mollit non deserunt ullamco est sit
+          <br />
+          aliqua dolor do amet sint. Velit officia consequat
+          <br />
+          duis enim velit mollit. Exercitation veniam
+          <br />
+          consequat sunt nostrud amet.
+        </p>
+      </MainContainer>
      
+    </>
+  );
+};
+const MainContainer= styled.div`
+  width:400px;
+  border:2px solid gray;
+  padding:10px;
+  margin:10px;
+  background:white;
 
-        </>
-    )
-}
-export default Card ;
+  @media ${deviceMax.mobileL}{
+    width:350px;
+    padding:0px;
+    margin:0px;
+    justify-content:center;
+
+  }
+`
+export default Card;

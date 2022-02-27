@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { deviceMax ,device} from "../utils/device";
+import { deviceMax } from "../utils/device";
 const Card = () => {
   return (
     <>

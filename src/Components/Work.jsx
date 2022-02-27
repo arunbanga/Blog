@@ -7,9 +7,9 @@ const Work=()=>{
         
         <Container  width='100%' >
         <Container width="100%" display="flex" flexDirection="column" alignItems="center">
-        <StyleWork width='100%'>
+        <StyleWork width='1200px'>
         <Images src='https://bs-uploads.toptal.io/blackfish-uploads/uploaded_file/file/186608/image-1581632156292-24dce5abf74f92d5ced2b7671b9f14c8.png' alt='gd'/>
-         <StyleInfo >
+         <StyleInfo  >
           <h3>I Can help you.</h3>
           <h1>Convert visitors <br/> into customers.</h1>
          </StyleInfo>

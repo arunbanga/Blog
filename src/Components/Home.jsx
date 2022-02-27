@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Container } from "./Styles/Container.style";
-import { Images, Image } from "../Components/Styles/Home.style";
-import { deviceMax } from "../utils/device";
+import { Images, } from "../Components/Styles/Home.style";
+import { deviceMax, device } from "../utils/device";
 import Card from "../Data/Card";
-import Workdata from '../Data/Workdata'
+import Workdata from "../Data/Workdata";
 const Home = () => {
   return (
     <>
@@ -55,7 +55,7 @@ const Home = () => {
             </RightContainer>
           </CenterContainer>
 
-          <Container background="skyblue">
+           <Container background="skyblue" padding="0px">
             <Container
               width="100%"
               display="flex"
@@ -65,23 +65,19 @@ const Home = () => {
             >
               <h2>Recent Posts</h2>
               <h3>View All</h3>
-            </Container>
+            </Container> 
             <Blogs>
               <Card />
               <Card />
             </Blogs>
           </Container>
-          <Container>
+           <Container>
             <p style={{ textAlign: "center" }}>Featured Works</p>
-            
+
             <Workdata/>
             <Workdata/>
-             <Workdata/>
-              
-              
-              
-            
-          </Container>
+            <Workdata/>
+          </Container> 
         </MainContainer>
       </Container>
     </>
@@ -90,9 +86,15 @@ const Home = () => {
 const MainContainer = styled.div`
   margin: 0 5px 100px;
   width: 900px;
+
+  @media ${device.mobileL} and ${deviceMax.tablet}{
+    width:92%;
+    padding:0px;
+  }
 `;
 const CenterContainer = styled.div`
   width: 100%;
+  margin-bottom: 10px;
   display: flex;
   @media ${deviceMax.mobileL} {
     width: 100%;
@@ -102,7 +104,9 @@ const CenterContainer = styled.div`
     align-items: center;
     justifycontent: center;
   }
+  
 `;
+
 const LeftContainer = styled.div`
   width: 100%;
   padding: 0px;
@@ -110,6 +114,8 @@ const LeftContainer = styled.div`
     width: 100%;
     text-align: center;
   }
+
+  
 `;
 
 const RightContainer = styled.div`
@@ -121,6 +127,7 @@ const RightContainer = styled.div`
     width: 100%;
     justify-content: center;
   }
+  
 `;
 const Blogs = styled.div`
   display: flex;
@@ -128,7 +135,7 @@ const Blogs = styled.div`
   height: 300px;
   padding: 0px;
   width: 100%;
-  justifycontent: center;
+  justify-content: center;
 
   @media ${deviceMax.mobileL} {
     display: flex;
@@ -139,20 +146,10 @@ const Blogs = styled.div`
     width: 100%;
     font-size: 20px;
   }
-`;
-const Work = styled.div`
-  width: 900px;
-  height:100%;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  @media ${deviceMax.mobileL} {
-    width: 600px;
-    height:100%;
-    sdisplay: flex;
-    flex-direction: column;
-    text-align:center;
+  @media ${device.mobileL} and ${deviceMax.tablet}{
+    height:337px;
   }
+  
 `;
 
 export default Home;

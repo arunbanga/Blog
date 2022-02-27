@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { deviceMax } from "../utils/device";
+import { deviceMax ,device} from "../utils/device";
 const Card = () => {
   return (
     <>
@@ -29,9 +29,11 @@ const MainContainer = styled.div`
   background: white;
 
   @media ${deviceMax.mobileL} {
-    width: 350px;
-    padding: 0px;
-    margin: 0px;
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 2px;
   }
+  
+ 
 `;
 export default Card;

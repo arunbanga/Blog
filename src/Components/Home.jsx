@@ -5,6 +5,7 @@ import { Images, } from "../Components/Styles/Home.style";
 import { deviceMax, device } from "../utils/device";
 import Card from "../Data/Card";
 import Workdata from "../Data/Workdata";
+import Socialicons from '../Components/Socialicons'
 const Home = () => {
   return (
     <>
@@ -78,6 +79,12 @@ const Home = () => {
             <Workdata/>
             <Workdata/>
           </Container> 
+          <FooterContainer  width="100%"
+              display="flex"
+              flexDirection="row"
+              justifyContent="center">
+           <Socialicons/>
+            </FooterContainer>
         </MainContainer>
       </Container>
     </>
@@ -129,6 +136,13 @@ const RightContainer = styled.div`
   }
   
 `;
+const FooterContainer=styled.div`
+  width:100%;
+  margin-top:50px;
+  display:flex;
+  flex-direction:row;
+  justify-Content:center;
+  `
 const Blogs = styled.div`
   display: flex;
   background: skyblue;
@@ -149,6 +163,7 @@ const Blogs = styled.div`
   @media ${device.mobileL} and ${deviceMax.tablet}{
     height:337px;
   }
+  
   
 `;
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "../Components/Styles/Home.style";
 import styled from "styled-components";
-import { deviceMax,device } from "../utils/device";
+import { deviceMax, device } from "../utils/device";
 const Workdata = () => {
   return (
     <>
@@ -15,8 +15,10 @@ const Workdata = () => {
           <h2> Dashboard</h2>
           <p>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint.<br/> Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt<br/> nostrud amet.
+            sint.
+            <br /> Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt
+            <br /> nostrud amet.
           </p>
         </div>
       </MainWork>

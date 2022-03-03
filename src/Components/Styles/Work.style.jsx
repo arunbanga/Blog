@@ -19,7 +19,7 @@ export const StyleInfo = styled.div`
 
   @media ${deviceMax.mobileL} {
     position: absolute;
-    top: 170px;
+    top:60px;
     font-size: 7px;
     right: 60px;
   }
@@ -30,7 +30,7 @@ export const StyleInfo = styled.div`
     font-size: 15px;
     right: 10px;
   }
-  @media ${deviceMax.laptop} {
+  @media ${device.laptop} {
     position: absolute;
     top: 170px;
   }
@@ -44,9 +44,9 @@ export const StyleNav = styled.div`
   
   @media ${deviceMax.mobileL} {
     position: absolute;
-    top: 80px;
+    top: 12px;
     font-size: 7px;
-    left: 60px;
+    left: 50px;
   }
   
   @media ${device.mobileL} and ${deviceMax.tablet}{

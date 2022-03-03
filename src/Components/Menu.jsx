@@ -1,7 +1,6 @@
 import React from 'react';
 import {Container} from './Styles/Container.style';
 import {Nav} from './Styles/Blog.style';
-
 const Menu =()=>{
     return(
         <>

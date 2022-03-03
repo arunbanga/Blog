@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { Container } from "./Styles/Container.style";
-import { Images, } from "../Components/Styles/Home.style";
+import { Images } from "../Components/Styles/Home.style";
 import { deviceMax, device } from "../utils/device";
 import Card from "../Data/Card";
 import Workdata from "../Data/Workdata";
-import Socialicons from '../Components/Socialicons'
+import Socialicons from "../Components/Socialicons";
 const Home = () => {
   return (
     <>
@@ -56,7 +56,7 @@ const Home = () => {
             </RightContainer>
           </CenterContainer>
 
-           <Container background="skyblue" padding="0px">
+          <Container background="skyblue" padding="0px">
             <Container
               width="100%"
               display="flex"
@@ -66,25 +66,27 @@ const Home = () => {
             >
               <h2>Recent Posts</h2>
               <h3>View All</h3>
-            </Container> 
+            </Container>
             <Blogs>
               <Card />
               <Card />
             </Blogs>
           </Container>
-           <Container>
+          <Container>
             <p style={{ textAlign: "center" }}>Featured Works</p>
 
-            <Workdata/>
-            <Workdata/>
-            <Workdata/>
-          </Container> 
-          <FooterContainer  width="100%"
-              display="flex"
-              flexDirection="row"
-              justifyContent="center">
-           <Socialicons/>
-            </FooterContainer>
+            <Workdata />
+            <Workdata />
+            <Workdata />
+          </Container>
+          <FooterContainer
+            width="100%"
+            display="flex"
+            flexDirection="row"
+            justifyContent="center"
+          >
+            <Socialicons />
+          </FooterContainer>
         </MainContainer>
       </Container>
     </>
@@ -111,7 +113,6 @@ const CenterContainer = styled.div`
     align-items: center;
     justifycontent: center;
   }
-  
 `;
 
 const LeftContainer = styled.div`
@@ -121,8 +122,6 @@ const LeftContainer = styled.div`
     width: 100%;
     text-align: center;
   }
-
-  
 `;
 
 const RightContainer = styled.div`
@@ -134,15 +133,14 @@ const RightContainer = styled.div`
     width: 100%;
     justify-content: center;
   }
-  
 `;
-const FooterContainer=styled.div`
-  width:100%;
-  margin-top:50px;
-  display:flex;
-  flex-direction:row;
-  justify-Content:center;
-  `
+const FooterContainer = styled.div`
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
 const Blogs = styled.div`
   display: flex;
   background: skyblue;
